@@ -12,7 +12,7 @@ if [ $# -eq 0 ]; then
    echo "Please provide the file name or directory to check if exists"
    exit 1
   else 
-    for Name in $@ ; then
+    for Name in $@ ; do
         if [ -f $NAME ]; 
            echo "Please find the file name provided: $NAME"
            echo "Checking if file exists.....$NAME"
