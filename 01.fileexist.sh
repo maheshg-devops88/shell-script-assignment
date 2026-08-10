@@ -16,8 +16,8 @@ if [ $# -eq 0 ]; then
         if [ -f $NAME ]; then
            echo "Please find the file name provided: $NAME"
            echo "Checking if file exists.....$NAME"
-           $filetype=$(find / -type f -name $NAME)
-
+           filetype=$(find / -type f -name $NAME)
+           echo $filetype
            if [ $? -eq 0 ]; then
               echo "please find the file $NAME exists in path $filetype"
            fi
