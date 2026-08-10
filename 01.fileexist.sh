@@ -13,12 +13,12 @@ if [ $# -eq 0 ]; then
    exit 1
   else 
     for Name in $@ ; do
-        if [ -f $NAME ]; 
+        if [ -f $NAME ]; then
            echo "Please find the file name provided: $NAME"
            echo "Checking if file exists.....$NAME"
            $filetype=$(find / -type f -name $NAME)
 
-           if [ $? -eq 0 ];
+           if [ $? -eq 0 ]; then
               echo "please find the file $NAME exists in path $filetype"
            fi
        else
