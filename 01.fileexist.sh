@@ -14,11 +14,10 @@ if [ $# -eq 0 ]; then
   else 
     for NAME in $@ ; do
         filetype=$(find / -type f -name $NAME)
-        echo $filetype
-        if [ $? -eq 0 ]; then
+        if [ -n $filetype ]; then
               echo "please find the file $NAME exists in path $filetype"
        else
-             echo "File name $NAME does not exists"
+              echo "File name $NAME does not exists"
         fi
     done
 fi
