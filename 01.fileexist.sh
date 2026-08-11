@@ -19,6 +19,8 @@ for NAME in $@ ; do
            for path in $paths; do
              if [ -f "$path" ];then
                 echo "This is File in path : $path"
+                [ -r "$path" ] && echo "$path is writable for current user" || echo "$path is not writable for current user"
+                [ -w "$path" ] && echo "$path is writable for current user" || echo "$path is not writable for current user"
              elif [ -d "$path" ]; then
                 echo "Please find the Dir $NAME exists in path $path"
                 echo "Please find the list of files in dir:"
