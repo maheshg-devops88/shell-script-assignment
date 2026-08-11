@@ -16,7 +16,7 @@ fi
 for NAME in $@ ; do
       path=$(find / -type f -name $NAME)
       if [ -n "$path" ]; then
-             if [ -f "$path"];then
+             if [ -f "$path" ];then
               echo "This is File in path : $path"
       elif [ -d "$path" ]; then
               echo "Please find the Dir $NAME exists in path $path"
