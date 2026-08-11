@@ -11,8 +11,9 @@ fi
 if [ $# -eq 0 ]; then
    echo "Please provide the file name or directory to check if exists"
    exit 1
-  else 
-    for NAME in $@ ; do
+fi
+    
+for NAME in $@ ; do
         filetype=$(find / -type f -name $NAME)
         if [ $? -eq 0 ]; then
               echo "please find the file $NAME exists in path $filetype"
@@ -20,7 +21,7 @@ if [ $# -eq 0 ]; then
               echo "File name $NAME does not exists"
         fi
     done
-fi
+
 
         
             #    if [ -d $NAME ];
