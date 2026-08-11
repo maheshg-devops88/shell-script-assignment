@@ -25,11 +25,11 @@ for NAME in $@ ; do
     done
 
 for NAME in $@ ; do
-       filetype=$(find / -type d -name $NAME)
-       if [ -n "$filetype" ]; then
-                  echo "Please find the Dir $Name exists in path $filetype 
-                  cd $filetype
-                  echo "Please find the list of files in dir $filetype: $(ls -ltr $filetype)
+       dirtype=$(find / -type d -name $NAME)
+       if [ -n "$dirtype" ]; then
+                  echo "Please find the Dir $Name exists in path $dirtype 
+                  cd $dirtype
+                  echo "Please find the list of files in dir $dirtype: $(ls -ltr $dirtype)
             else
                     echo "Dir $NAME does not exists"
                fi
