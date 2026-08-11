@@ -16,7 +16,7 @@ fi
 for NAME in $@ ; do
       paths=$(find / -name "$NAME")
       if [ -n "$paths" ]; then
-           for path in "$paths"; do
+           for path in $paths; do
              if [ -f "$path" ];then
                 echo "This is File in path : $path"
              elif [ -d "$path" ]; then
