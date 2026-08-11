@@ -24,9 +24,10 @@ for NAME in $@ ; do
                 echo "Please find the list of files in dir:"
                 ls -ltr "$path"
               fi
-          else
-            echo "$NAME does not exist"
           done
+      else
+            echo "$NAME does not exist"
+      
       fi
 done
          
