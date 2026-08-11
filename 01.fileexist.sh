@@ -14,15 +14,15 @@ if [ $# -eq 0 ]; then
 fi
     
 for NAME in $@ ; do
-      path=$(find / -name $NAME)
+      path=$(find / -name "$NAME")
       if [ -n "$path" ]; then
              if [ -f "$path" ];then
               echo "This is File in path : $path"
       elif [ -d "$path" ]; then
               echo "Please find the Dir $NAME exists in path $path"
-              cd $path
-              echo "Please find the list of files in dir :"
-              ls -ltr $path
+              cd "$path"
+              echo "Please find the list of files in dir:"
+              ls -ltr "$path"
       fi
           else
             echo "$NAME does not exist"
