@@ -14,7 +14,7 @@ if [ $# -eq 0 ]; then
 fi
     
 for NAME in $@ ; do
-      path=$(find / -type f -name $NAME)
+      path=$(find / -name $NAME)
       if [ -n "$path" ]; then
              if [ -f "$path" ];then
               echo "This is File in path : $path"
