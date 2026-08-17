@@ -22,9 +22,9 @@ for NUM in $@; do
  
      IS_PRIME=1
 
-   for ((i=2,i*i<=NUM;i++)); do
+   for ((i=2; i*i<=$NUM ;i++)); do
        
-       if (( NUM % i == 0 )); then 
+       if (( $NUM % i == 0 )); then 
            IS_PRIME=0
            break
        fi
