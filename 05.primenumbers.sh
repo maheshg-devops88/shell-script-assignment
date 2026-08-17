@@ -13,7 +13,7 @@ if [ $# -eq 0 ]; then
    exit 1
 fi
 
-for NUM in $@; then
+for NUM in $@; do
    
      if [ $NUM -lt 2 ]; then
         echo "$NUM is not prime"
