@@ -32,9 +32,9 @@ for NUM in $@; do
 
     if [ "$IS_PRIME" -eq 0 ]; then
        
-       echo "$NUM is prime" 
+       echo "$NUM is not prime" 
       else
-       echo "$NUM is not prime"
+       echo "$NUM is prime"
     fi
 
 done
