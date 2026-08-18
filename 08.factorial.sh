@@ -10,6 +10,7 @@ fi
 
 if [ $# -eq 0 ]; then
    echo "Please provide the number to provide the factorial number"
+   exit 1
 fi
 
 n=$1
