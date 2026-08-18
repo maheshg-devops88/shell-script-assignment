@@ -13,6 +13,8 @@ if [ $# -eq 0 ]; then
    exit 1
 fi
 
+n=$1
+
 a=0
 b=1
 
