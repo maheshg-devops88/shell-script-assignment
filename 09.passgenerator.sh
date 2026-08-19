@@ -13,7 +13,7 @@ if [ $# -eq 0 ]; then
    exit 1
 fi
 
-Length=$1
+length=$1
 
 # Define character sets
 upper="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
