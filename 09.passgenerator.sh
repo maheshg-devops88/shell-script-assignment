@@ -35,7 +35,7 @@ remaining=$((length-4))
 
 if [ $remaining -gt 0 ]; then
    
-   password+=$(echo all | fold -w1 | shuf | head -n $remaining | tr -d '\n')
+   password+=$(echo "$all" | fold -w1 | shuf | head -n $remaining | tr -d '\n')
 
 fi 
 
