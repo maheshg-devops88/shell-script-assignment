@@ -17,7 +17,7 @@ num=$1
 
 for ((i=1; i<=$num; i++)); do
 
-    spaces=$(($num - 1))
+    spaces=$((num - 1))
     stars=((2 * i - 1))
     printf "%${spaces}s" ""
     printf "%${stars}s\n" "" | tr ' ' '*'
