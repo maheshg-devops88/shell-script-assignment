@@ -15,7 +15,7 @@ fi
 
 num=$1
 
-for(i=1; i<=$num; i++); then
+for ((i=1; i<=$num; i++)); then
 
     spaces=(($num-1))
     stars=((2*i-1))
