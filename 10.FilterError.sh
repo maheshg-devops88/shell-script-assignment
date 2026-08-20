@@ -18,7 +18,7 @@ OUTPUT_FILE="error_lines.csv"
 
 {
       echo "Saving ERROR to new File"
-      grep "stopped" "$INPUT_FILE"
+      grep -i "stopped" "$INPUT_FILE"
 
 } > "$OUTPUT_FILE"
 
