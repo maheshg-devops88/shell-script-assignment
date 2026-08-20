@@ -22,4 +22,4 @@ OUTPUT_FILE="error_lines.csv"
 
 } > "$OUTPUT_FILE"
 
-echo "Filtered error saved to $OUTPUT_FILE"
+echo "Filtered error saved to file: $OUTPUT_FILE"
